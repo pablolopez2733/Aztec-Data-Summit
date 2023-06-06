@@ -52,7 +52,7 @@ If you have any questions, don't hesitate to reach out to any of the organizers:
 > 
 > _LinkedIn:_ [Julian-Sferir](https://www.linkedin.com/in/julian-sfeir/)
 >
-> _Correo:_ [rzepeda17@gmail.com](mailto:juliansfeir1@gmail.com)
+> _Correo:_ [juliansfeir1@gmail.com](mailto:juliansfeir1@gmail.com)
 
 
 > **Pablo López-Landeros**
@@ -68,6 +68,6 @@ If you have any questions, don't hesitate to reach out to any of the organizers:
 >
 > _Correo:_ [santiago.fernandezdelcastillo@gmail.com](santiago.fernandezdelcastillo@gmail.com)
 
-> **Ernesto Anaya**
-> _Correo:_ [ernesto.anaya.olivares@gmail.com](ernesto.anaya.olivares@gmail.com)
+> **Ernesto Anaya** 
 >
+> _Correo:_ [ernesto.anaya.olivares@gmail.com](ernesto.anaya.olivares@gmail.com)
