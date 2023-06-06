@@ -2,8 +2,11 @@
 
 In this hackathon you will dive into the world of soccer analytics and explore ways to provide value to a team through data analysis. You will be provided 3 seasons of Statsbomb event data for the Women's FA Super League. The aim is to develop a Minimum Viable Product, slideshow, video, notebook, pdf, website or any kind of data driven deliverable that successfully communicates the results of an evidence based analysis geared towards adding value (whether on or off the pitch) to a soccer organization. 
 
+## Registration 💻 
+Register your team through our [official website](https://www.aztecsds.com/).
+
 ## Guidelines 📜 
-The full hackathon rules and guidelines can be found [here](https://docs.google.com/document/d/100QGnIm9kMNd2SfDaGVYzNDqEhGXC5bj_s-1mrbG7p8/edit)
+The full hackathon rules and guidelines can be found [here](https://docs.google.com/document/d/100QGnIm9kMNd2SfDaGVYzNDqEhGXC5bj_s-1mrbG7p8/edit).
 
 ## Dataset Links 🔗 
 In order to access the data, we have a couple of options. Choose the one that suits your workflow best!

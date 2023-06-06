@@ -1,0 +1,33 @@
+---
+title: "R tutorial for downloading Statsbomb event data"
+subtitle: 'All Seasons'
+author: "Pablo L. Landeros"
+date: "`r Sys.Date()`"
+abstract: "The aim of this writeup is to provide a tutorial on how to download data from the `StatsBombR` library"
+title-block-banner: false
+execute:
+  error: true
+  warning: false
+  message: false
+toc-title: "Content"
+published-title: "Last Updated: "
+backgroundcolor: "#eee9e5"
+format:
+    html: 
+      theme: sandstone
+      embed-resources: true
+      toc: true
+      toc-location: left
+      toc-depth: 3
+      code-fold: true
+      grid:
+        body-width: 1500px
+reference-location: margin
+citation-location: margin
+link-citations: yes
+---
+## Test
+```{r}
+
+```
+
