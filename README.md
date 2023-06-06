@@ -28,8 +28,9 @@ In order to access the data, we have a couple of options. Choose the one that su
 - [Open Data Events v4.0.0](https://github.com/statsbomb/open-data/blob/master/doc/Open%20Data%20Events%20v4.0.0.pdf) - Explains the meaning of the column names within the event data.
 - [StatsBomb Event Data Specification v1.1](https://github.com/statsbomb/open-data/blob/master/doc/StatsBomb%20Open%20Data%20Specification%20v1.1.pdf)- The full breakdown of all the events within the data.
 
- ## Join our Slack Channel! 🎉 
-Participants are strongly encouraged to [join the official slack channel](https://join.slack.com/t/aztecdatasummit/shared_invite/zt-1vvbzqi75-4XKi2CkuK09z2pivG_PGnw), where we will be sharing more news and updates as well as networking and mentoring opportunities.
+
+## Join our Slack Channel! 🎉 
+Participants are strongly encouraged to [join the official slack channel](https://join.slack.com/t/aztecdatasummit/shared_invite/zt-1vvbzqi75-4XKi2CkuK09z2pivG_PGnw), where we will be sharing news and updates as well as networking and mentoring opportunities.
 
 ## Deadlines 🗓️ 
 - Rolling Registration - June 2nd, 2023 to August 8th
