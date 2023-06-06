@@ -12,13 +12,21 @@ The full hackathon rules and guidelines can be found [here](https://docs.google.
 In order to access the data, we have a couple of options. Choose the one that suits your workflow best!
 
 1. [Python Notebook](https://colab.research.google.com/drive/173hzs8T9Ba5JNZN9meJPp19WBPE-Ei3Y?usp=sharing): You can copy the notebook into your own Google account to run/edit the codes. 
-2. [R Download](https://pablolopez2733.github.io/Aztec-Data-Summit/r_inst.html): Check out our tutorial on how to download data from the `StatsBombR` library. 
+2. [R Download](https://pablolopez2733.github.io/Aztec-Data-Summit/docs/r_ins.html): Check out our tutorial on how to download data from the `StatsBombR` library. 
 3. [Google Drive](https://pablolopez2733.github.io/Quarto-Tutorial/Gcion_rep.html): Download the data as zip files stored in a Google Drive folder.
 4. [Statsbomb Github](https://github.com/statsbomb): Directly connect and download the dataset through the official Statsbomb API. 
 
 ## Official Statsbomb Docs 💣 
 - [Accessing and working with Statsbomb Data in R](https://statsbomb.com/wp-content/uploads/2022/08/Working-with-R.pdf)
 - [Statsbombpy Documentation](https://github.com/statsbomb/statsbombpy)
+
+#### Getting to know the data
+- [Open Data Competitions v2.0.0.pdf](https://github.com/statsbomb/open-data/blob/master/doc/Open%20Data%20Competitions%20v2.0.0.pdf) - Covers the objects contained within the competitions information
+(FreeCompetitions() ).
+- [Open Data Matches v3.0.0.pdf](https://github.com/statsbomb/open-data/blob/master/doc/Open%20Data%20Matches%20v3.0.0.pdf) - Describes the match info download ( FreeMatches()).
+- [Open Data Lineups v2.0.0.pdf](https://github.com/statsbomb/open-data/blob/master/doc/Open%20Data%20Lineups%20v2.0.0.pdf) - Describes the structure of the lineup info ( getlineupsFree()).
+- [Open Data Events v4.0.0](https://github.com/statsbomb/open-data/blob/master/doc/Open%20Data%20Events%20v4.0.0.pdf) - Explains the meaning of the column names within the event data.
+- [StatsBomb Event Data Specification v1.1](https://github.com/statsbomb/open-data/blob/master/doc/StatsBomb%20Open%20Data%20Specification%20v1.1.pdf)- The full breakdown of all the events within the data.
 
  ## Join our Slack Channel! 🎉 
 Participants are strongly encouraged to [join the official slack channel](https://join.slack.com/t/aztecdatasummit/shared_invite/zt-1vvbzqi75-4XKi2CkuK09z2pivG_PGnw), where we will be sharing more news and updates as well as networking and mentoring opportunities.

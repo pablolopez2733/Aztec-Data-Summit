@@ -1,33 +1,117 @@
 ---
-title: "R tutorial for downloading Statsbomb event data"
+title: 'R tutorial for downloading Statsbomb event data'
 subtitle: 'All Seasons'
-author: "Pablo L. Landeros"
+author: 'Pablo L. Landeros'
 date: "`r Sys.Date()`"
-abstract: "The aim of this writeup is to provide a tutorial on how to download data from the `StatsBombR` library"
+abstract: The aim of this writeup is to provide a tutorial on how to download data from the `StatsBombR` library
 title-block-banner: false
 execute:
   error: true
   warning: false
   message: false
-toc-title: "Content"
-published-title: "Last Updated: "
+toc-title: 'Content'
 backgroundcolor: "#eee9e5"
 format:
-    html: 
-      theme: sandstone
-      embed-resources: true
-      toc: true
-      toc-location: left
-      toc-depth: 3
-      code-fold: true
-      grid:
-        body-width: 1500px
+  html:
+    theme: sandstone
+    toc: true
+    toc-location: left
+    toc-depth: 3
+    code-fold: false
+    grid:
+      body-width: 1500px
 reference-location: margin
 citation-location: margin
-link-citations: yes
+link-citations: true
 ---
-## Test
-```{r}
+## Installing Rtools
+`Rtools` is required to install the Statsbomb libraries. To install: 
 
+1. Go to [this link](https://cran.r-project.org/bin/windows/Rtools/rtools42/rtools.html) and download the Rtools installer.
+2. After downloading has completed, run the installer. Select the default options everywhere.
+
+## Library Installation
+To install the `StatsbombR` package, you’ll need to install the `devtools` package:
+```{r, eval = FALSE, echo = TRUE}
+install.packages('devtools')
+install.packages('tidyverse')
+install.packages('remotes')
+remotes::install_version("SDMTools", "1.1-221")
 ```
+Then, to install `StatsbombR` itself, run:
+```{r, eval = FALSE, echo = TRUE}
+devtools::install_github("statsbomb/StatsBombR")
+```
+
+Load `tidyverse` and Statsbomb libraries:
+```{r, eval = FALSE, echo = TRUE}
+library(tidyverse)
+library(SDMTools)
+library(StatsBombR)
+```
+
+## Downloading Women's FA Super League Data
+
+#### Establish competition ID
+`competition_id` for Women's FA Super league should be `37`.
+```{r, eval = FALSE, echo = TRUE}
+comp_id <- 37  #competition_id of the FA Women's super League
+```
+
+#### Get season IDs
+The IDs for the 3 available seasons are `90`,`42` and `2`:
+```{r, eval = FALSE, echo = TRUE}
+season_ids <- c(90, 42, 4)
+```
+
+#### Get data
+This grabs the competitions that are available to the user and filters it
+down, using dplyr’s `filter` function, to just the 2020/21 FA Women’s Super
+League season in this example.
+```{r, eval = FALSE, echo = TRUE}
+comps <- FreeCompetitions() %>%
+  dplyr::filter(competition_id==comp_id & season_id %in% season_ids) 
+```
+#### Exctract all free matches
+Pull matches for the desired competition:
+```{r, eval = FALSE, echo = TRUE}
+matches <- FreeMatches(comps)
+```
+#### Get events
+Create a table of the free event data for the FAWSL seasons.
+```{r,eval = FALSE, echo = TRUE}
+sb_data <- StatsBombFreeEvents(MatchesDF = matches, Parallel = T)
+```
+This might take a while to run
+
+Finally, we can use Statsbomb's `allclean` function to quickly exctract lots of relevant information such as x/y coordinates. 
+
+More information can be found in the package info. Be sure to familiarise
+yourself with the columns it creates using names(`nameofyourdfhere`).
+```{r, eval = FALSE, echo = TRUE}
+event_data <- allclean(sb_data)
+```
+
+## Official Statsbomb Documentation
+For more detailed documentation on Statsbomb data, you can check out the full documentation:
+
+- [Open Data Competitions v2.0.0.pdf](https://github.com/statsbomb/open-data/blob/master/doc/Open%20Data%20Competitions%20v2.0.0.pdf) - Covers the objects contained within the competitions information
+(FreeCompetitions() ).
+- [Open Data Matches v3.0.0.pdf](https://github.com/statsbomb/open-data/blob/master/doc/Open%20Data%20Matches%20v3.0.0.pdf) - Describes the match info download ( FreeMatches()).
+- [Open Data Lineups v2.0.0.pdf](https://github.com/statsbomb/open-data/blob/master/doc/Open%20Data%20Lineups%20v2.0.0.pdf) - Describes the structure of the lineup info ( getlineupsFree()).
+- [Open Data Events v4.0.0](https://github.com/statsbomb/open-data/blob/master/doc/Open%20Data%20Events%20v4.0.0.pdf) - Explains the meaning of the column names within the event data.
+- [StatsBomb Event Data Specification v1.1](https://github.com/statsbomb/open-data/blob/master/doc/StatsBomb%20Open%20Data%20Specification%20v1.1.pdf)- The full breakdown of all the events within the data.
+
+Now you're ready to participate! ╭(◔ ◡ ◔)/
+
+- [Home](https://pablolopez2733.github.io/Aztec-Data-Summit/)
+- [Official StatsbombR documentation](https://statsbomb.com/wp-content/uploads/2021/11/Working-with-R.pdf)
+
+
+
+
+
+
+
+
 
