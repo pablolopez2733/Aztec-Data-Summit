@@ -33,10 +33,12 @@ link-citations: true
 ## Library Installation
 To install the `StatsbombR` package, you’ll need to install the `devtools` package:
 ```{r, eval = FALSE, echo = TRUE}
-install.packages('devtools')
-install.packages('tidyverse')
-install.packages('remotes')
-remotes::install_version("SDMTools", "1.1-221")
+#install.packages('devtools')
+#install.packages('tidyverse')
+#install.packages('remotes')
+library(devtools)
+library(tidyverse)
+library(remotes)
 ```
 Then, to install `StatsbombR` itself, run:
 ```{r, eval = FALSE, echo = TRUE}
