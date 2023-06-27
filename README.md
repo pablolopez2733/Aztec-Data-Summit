@@ -1,7 +1,6 @@
 # Welcome to the 2023 Aztec Data Summit Hackathon! 
-![Logo](https://github.com/pablolopez2733/Aztec-Data-Summit/blob/main/img/azds_logo_bg.png?raw=true "AZDS")
 
- <img src="https://github.com/pablolopez2733/Aztec-Data-Summit/blob/main/img/azds_logo_bg.png?raw=true" alt="Logo" width="50%" height="50%"> 
+ <img src="https://github.com/pablolopez2733/Aztec-Data-Summit/blob/main/img/azds_logo_bg.png?raw=true" alt="Logo" width="65%" height="65%"> 
 
 In this hackathon you will dive into the world of soccer analytics and explore ways to provide value to a team through data analysis. You will be provided 3 seasons of Statsbomb event data for the Women's FA Super League. The aim is to develop a Minimum Viable Product, slideshow, video, notebook, pdf, website or any kind of data driven deliverable that successfully communicates the results of an evidence based analysis geared towards adding value (whether on or off the pitch) to a soccer organization. 
 
